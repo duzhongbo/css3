@@ -14,17 +14,25 @@ div{
 	background-color: #000;
 	position: absolute;
 	left: 10px;
-	transition: left 1s;
+	transition: left 1s ease 0;/* 渐变属性 持续时间 动画类型 开始时间 */
 }
-div:hover{
-	left: 100px;
+.move{
+	left: 700px;
+}
 
-}
 
 </style>
 
 
-<div></div>
+<div id="demo"></div>
+
+<script type="text/javascript">
+demo.onclick=function(){
+	this.className='move';
+}
+	
+
+</script>
 
 </body>
 </html>
