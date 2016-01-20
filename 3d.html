@@ -63,6 +63,22 @@
 	transform-origin:center top;
 	transform:translateX(50px) translateY(150px) rotateX(-90deg);
 }
+.space{
+	position:relative;
+	width:100%;
+	height:100%;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform-origin:center center -50px;
+	-webkit-animation:s 4s linear infinite;
+}
+@-webkit-keyframes s{
+	0%{
+		-webkit-transform:rotateY(0);
+	}
+	100%{
+		-webkit-transform:rotateY(-359.9deg);
+	}
+}
 </style>
 
 
