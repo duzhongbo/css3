@@ -28,13 +28,52 @@
 }
 .a:before{
 	left:27px;
-	border-bottom-color:#fff;
+	border-color:transparent transparent #fff;
 	transition:.2s;
 }
 .a:after{
 	left:54px;
-	border-bottom-color:#fff;
+	border-color:transparent transparent #fff;
 	transition:.2s;
+}
+
+
+
+.a:hover:before{
+  top:26px;
+  left:45px;
+  width:0;
+  transform:scale(2,1.17) rotate(90deg);
+  border-width:0 0 24px 24px; 
+}
+.a:hover:after{
+  top:53px;
+  left:45px;
+  width:0;
+  transform:scale(2,1.17) rotate(90deg);
+  border-width:0 24px 24px 0; 
+}
+.a:hover{
+  background:#095;
+  transition:.4s;
+}
+.a:active:before{
+  border-width:0 0 24px 0;
+  width:22px;
+  top:26px;
+  left:38px;
+  transition:.4s;
+}
+.a:active:after{
+  border-width:0 0 24px 0;
+  width:22px;
+  top:50px;
+  left:38px;
+  transition:.4s;
+}
+.a:active{
+  transform:rotate(180deg);
+  background:#0a9;
 }
 
 </style>
