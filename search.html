@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基于css选择器的搜索</title>
+</head>
+<body>
+	
+
+<style id="style">
+li:not([data-cont*='text1']){
+	display: none;
+}
+
+</style>
+
+<ul>
+	<li data-cont="text1">text1</li>
+	<li data-cont="text2">text2</li>
+	<li data-cont="text3">text3</li>
+	<li data-cont="text4">text4</li>
+	<li data-cont="text5">text5</li>
+	<li data-cont="text6">text6</li>
+	<li data-cont="text7">text7</li>
+	<li data-cont="text8">text8</li>
+	<li data-cont="text9">text9</li>
+	<li data-cont="text10">text10</li>
+</ul>
+
+
+</body>
+</html>
