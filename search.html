@@ -14,6 +14,10 @@ li:not([data-cont*='text1']){
 
 </style>
 
+<input type="text" id="it">
+<input type="button" value="搜索" id="btn">
+
+
 <ul>
 	<li data-cont="text1">text1</li>
 	<li data-cont="text2">text2</li>
@@ -27,6 +31,16 @@ li:not([data-cont*='text1']){
 	<li data-cont="text10">text10</li>
 </ul>
 
+<script type="text/javascript">
+function search(){
+	var val = it.value;
+	var str = 'li:not([data-cont*='+val+']){\
+	display:none;}';
+	style.innerHTML = str;
+}
+btn.onclick=search;
+
+</script>
 
 </body>
 </html>
