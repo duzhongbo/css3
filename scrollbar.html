@@ -15,6 +15,7 @@
 	overflow-y: auto;
 	overflow-x: auto;
 	white-space: nowrap;
+	/*resize:both;*/
 }
 /*滚动条整体部分*/
 .box::-webkit-scrollbar{
@@ -41,6 +42,24 @@
 .box::-webkit-scrollbar-corner{
 	background-color: #000;
 }
+/*两个滚动条的交汇处上用于通过拖动调整元素大小的小控件*/
+.box::-webkit-resizer{
+	background-color: #666;
+}
+
+
+/*重置滚动条按钮样式*/
+
+
+/* 垂直滚动条的上方按钮，水平滚动条的左侧按钮 */
+.box::-webkit-scrollbar-button:start:decrement{
+	background-color: #f00;
+}
+/* 垂直滚动条的下方按钮，水平滚动条的右侧按钮 */
+.box::-webkit-scrollbar-button:end:increment{
+	background-color: #00f;
+}
+
 </style>
 
 
