@@ -10,7 +10,7 @@
 <style type="text/css">
 .box{
 	width: 100px;
-	height: 100px;
+	height: 300px;
 	border: 1px #000 solid;
 	overflow-y: auto;
 	overflow-x: auto;
@@ -24,7 +24,10 @@
 }
 /*滚动条里面的小方块*/
 .box::-webkit-scrollbar-thumb{
-	background-color: #0f0;
+	height: 50px;
+	border-radius: 15px;
+	background-color: #ccc;
+	border: 2px #ff0 solid;
 }
 /*滚动条的轨道（里面装有Thumb）,会覆盖scrollbar设置*/
 .box::-webkit-scrollbar-track{
@@ -37,6 +40,7 @@
 /*内层轨道,会覆盖scrollbar-track和scrollbar*/
 .box::-webkit-scrollbar-track-piece{
 	background-color: #ff0;
+	border-radius: 15px;
 }
 /*两个滚动条的交汇处*/
 .box::-webkit-scrollbar-corner{
